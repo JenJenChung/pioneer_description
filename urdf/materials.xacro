@@ -33,4 +33,8 @@
 	  <color rgba="0.0 0.8 0.0 1.0"/>
   </material>
 
+	<material name="HatGrey">
+		<color rgba="0.1 0.1 0.1 1.0"/>
+	</material>
+
 </robot>

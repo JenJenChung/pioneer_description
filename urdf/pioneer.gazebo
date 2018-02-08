@@ -112,6 +112,11 @@
     <material value="Gazebo/Green"/>
   </gazebo>
 
+  <!-- hat_link -->
+  <gazebo reference="hat_link">
+    <material value="Gazebo/Black"/>
+  </gazebo>
+
   <!-- hokuyo -->
   <gazebo reference="laser">
     <sensor type="ray" name="head_hokuyo_sensor">
@@ -119,17 +124,33 @@
       <visualize>true</visualize>
       <update_rate>40</update_rate>
       <ray>
+<!--   Original specs for awesome sensing capabilities   -->
+<!--        <scan>-->
+<!--          <horizontal>-->
+<!--            <samples>720</samples>-->
+<!--            <resolution>1</resolution>-->
+<!--            <min_angle>-3.1415927</min_angle>-->
+<!--            <max_angle>3.1415927</max_angle>-->
+<!--          </horizontal>-->
+<!--        </scan>-->
+<!--        <range>-->
+<!--          <min>0.10</min>-->
+<!--          <max>30.0</max>-->
+<!--          <resolution>0.01</resolution>-->
+<!--        </range>-->
+
+<!--   New specs for not great sensing but potentially faster simulation   -->
         <scan>
           <horizontal>
-            <samples>720</samples>
+            <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>-3.1415927</min_angle>
-            <max_angle>3.1415927</max_angle>
+            <min_angle>-1.57079632679</min_angle>
+            <max_angle>1.57079632679</max_angle>
           </horizontal>
         </scan>
         <range>
           <min>0.10</min>
-          <max>30.0</max>
+          <max>6.0</max>
           <resolution>0.01</resolution>
         </range>
         <noise>
