@@ -2,27 +2,27 @@ pioneer1:
   x: 0.0
   y: 0.0
   a: 0.0
-pioneer2:
+pioneer5:
   x: 21.0
   y: -21.0
   a: 3.14
-pioneer3:
+pioneer2:
   x: 0.0
   y: -3.0
   a: 0.0
-pioneer4:
+pioneer6:
   x: 21.0
   y: -18.0
   a: 3.14
-pioneer5:
+pioneer3:
   x: 3.0
   y: 0.0
   a: 0.0
-pioneer6:
+pioneer7:
   x: 18.0
   y: -21.0
   a: 3.14
-pioneer7:
+pioneer4:
   x: 3.0
   y: -3.0
   a: 0.0
@@ -30,3 +30,36 @@ pioneer8:
   x: 18.0
   y: -18.0
   a: 3.14
+  
+#pioneer1:
+#  x: 0.0
+#  y: 0.0
+#  a: 0.0
+#pioneer2:
+#  x: 21.0
+#  y: -21.0
+#  a: 3.14
+#pioneer3:
+#  x: 0.0
+#  y: -3.0
+#  a: 0.0
+#pioneer4:
+#  x: 21.0
+#  y: -18.0
+#  a: 3.14
+#pioneer5:
+#  x: 3.0
+#  y: 0.0
+#  a: 0.0
+#pioneer6:
+#  x: 18.0
+#  y: -21.0
+#  a: 3.14
+#pioneer7:
+#  x: 3.0
+#  y: -3.0
+#  a: 0.0
+#pioneer8:
+#  x: 18.0
+#  y: -18.0
+#  a: 3.14
