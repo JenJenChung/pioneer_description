@@ -399,34 +399,34 @@
   </link>
   
   <!-- Hat -->
-  <joint name="hat_joint" type="fixed">
-    <origin xyz="0.0 0 0.0255" rpy="0 0 0"/>
-    <parent link="top_plate"/>
-    <child link="hat_link"/>
-  </joint>
+<!--  <joint name="hat_joint" type="fixed">-->
+<!--    <origin xyz="0.0 0 0.0255" rpy="0 0 0"/>-->
+<!--    <parent link="top_plate"/>-->
+<!--    <child link="hat_link"/>-->
+<!--  </joint>-->
 
-  <link name="hat_link">
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-	      <box size="0.15 0.2 0.4"/>
-      </geometry>
-    </collision>
+<!--  <link name="hat_link">-->
+<!--    <collision>-->
+<!--      <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--      <geometry>-->
+<!--	      <box size="0.15 0.2 0.4"/>-->
+<!--      </geometry>-->
+<!--    </collision>-->
 
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      	<box size="0.15 0.2 0.4"/>
-      </geometry>
-      <material name="HatGrey"/>
-    </visual>
+<!--    <visual>-->
+<!--      <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--      <geometry>-->
+<!--      	<box size="0.15 0.2 0.4"/>-->
+<!--      </geometry>-->
+<!--      <material name="HatGrey"/>-->
+<!--    </visual>-->
 
-    <inertial>
-      <mass value="1e-5" />
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
-    </inertial>
-  </link>
+<!--    <inertial>-->
+<!--      <mass value="1e-5" />-->
+<!--      <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />-->
+<!--    </inertial>-->
+<!--  </link>-->
   
   <!-- START: Not sure if I need this, may allow for rosservice calls to gazebo joint manager -->
   <transmission name="tran1">
