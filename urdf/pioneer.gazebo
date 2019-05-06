@@ -16,6 +16,7 @@
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
     </plugin>
   </gazebo>
   <!-- END: Not sure if I need this -->
@@ -32,7 +33,10 @@
       <commandTopic>pioneer/cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
+      <odometrySource>world</odometrySource>
       <robotBaseFrame>base_link</robotBaseFrame>
+      <publishTf>true</publishTf>
+      <publishOdomTF>true</publishOdomTF>
       <publishWheelTF>true</publishWheelTF>
       <publishWheelJointState>true</publishWheelJointState>
       <wheelAcceleration>0</wheelAcceleration>
@@ -122,7 +126,7 @@
   <gazebo reference="laser">
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>40</update_rate>
       <ray>
 <!--   Original specs for awesome sensing capabilities   -->

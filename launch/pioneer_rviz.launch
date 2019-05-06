@@ -1,6 +1,7 @@
 <launch>
-  <param name="robot_description"
-    command="$(find xacro)/xacro.py '$(find pioneer_description)/urdf/pioneer3dx.xacro'" />
+  <arg name="model" default="$(find pioneer_description)/urdf/pioneer3dx.xacro"/>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
 
   <!-- send fake joint values -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">

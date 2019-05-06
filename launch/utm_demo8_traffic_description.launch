@@ -1,7 +1,8 @@
 <launch>
+  <arg name="model" default="$(find pioneer_description)/urdf/pioneer3dx.xacro"/>
+
   <!-- Load the URDF into the ROS Parameter Server -->
-  <param name="robot_description"
-	 command="$(find xacro)/xacro.py '$(find pioneer_description)/urdf/pioneer3dx.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
   
   <rosparam file="$(find pioneer_description)/launch/pioneer_utm_traffic_demo8.yaml" command="load"/>
 </launch>
